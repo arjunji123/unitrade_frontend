@@ -46,7 +46,7 @@ export default defineConfig({
     port: 3000, // ✅ Set custom port
     proxy: {
       "/api": {
-        target: "https://theunitradehub.com/admin/api/v1",
+        target: "https://admin.theunitradehub.com/admin/api/v1",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
