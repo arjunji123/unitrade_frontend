@@ -75,7 +75,7 @@ function Payment() {
 
       let checkoutOptions = {
         paymentSessionId: payment_session_id,
-        redirectTarget: "_blank",
+        redirectTarget: "_self",
       };
       cashfree.checkout(checkoutOptions);
     } catch (error) {
